@@ -145,8 +145,9 @@ header {
 }
 
 .logo {
-  max-width: 100px;
+  max-width: 200px;
 }
+
 .nav {
   position: fixed;
   background: var(--clr-dark);
