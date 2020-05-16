@@ -3,7 +3,8 @@ import { useHttpClient } from "../../hooks/http-hook";
 
 import Loader from "../Loader/Loader";
 import makeToast from "../Toaster/Toaster";
-import { Link } from "react-router-dom";
+
+import ArticleCard from "../Cards/ArticleCard";
 
 const MyWork = ({ myWorkRef }) => {
   const { isLoading, error, sendRequest } = useHttpClient();
@@ -26,27 +27,20 @@ const MyWork = ({ myWorkRef }) => {
       <p className="section__subtitle section__subtitle--work">
         A selection of my range of work
       </p>
-
-      <div className="portfolio">
-        {error && makeToast("error", error)}
+      {error && makeToast("error", error)}
+      <ul className="cards">
         {isLoading ? (
           <Loader />
         ) : (
-          loadedProjects.map((project) => (
-            <Link
-              key={project.id}
-              to={`/article/projects/${project.id}`}
-              className="portfolio__item"
-            >
-              <img
-                src={`${process.env.REACT_APP_ASSET_URL}${project.mainImage.url}`}
-                alt=""
-                className="portfolio__img"
-              />
-            </Link>
-          ))
+          loadedProjects.map((project) => {
+            return (
+              <li key={project.id} className="cards_item">
+                <ArticleCard article={project} type="projects" />
+              </li>
+            );
+          })
         )}
-      </div>
+      </ul>
     </section>
   );
 };

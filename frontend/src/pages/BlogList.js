@@ -3,7 +3,7 @@ import { useHttpClient } from "../hooks/http-hook";
 import makeToast from "../components/Toaster/Toaster";
 import Loader from "../components/Loader/Loader";
 
-import BlogCard from "../components/Cards/BlogCard";
+import ArticleCard from "../components/Cards/ArticleCard";
 
 const BlogList = () => {
   const { isLoading, error, sendRequest } = useHttpClient();
@@ -32,7 +32,7 @@ const BlogList = () => {
           loadedBlogs.map((blog) => {
             return (
               <li key={blog.id} className="cards_item">
-                <BlogCard blog={blog} />
+                <ArticleCard article={blog} type="blogs" />
               </li>
             );
           })
