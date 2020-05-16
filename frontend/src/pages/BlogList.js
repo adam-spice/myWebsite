@@ -7,7 +7,7 @@ import ArticleCard from "../components/Cards/ArticleCard";
 
 const BlogList = () => {
   const { isLoading, error, sendRequest } = useHttpClient();
-  const [loadedBlogs, setLoadedBlogs] = useState([]);
+  const [loadedBlogs, setLoadedBlogs] = useState();
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -29,6 +29,7 @@ const BlogList = () => {
         {isLoading ? (
           <Loader />
         ) : (
+          loadedBlogs &&
           loadedBlogs.map((blog) => {
             return (
               <li key={blog.id} className="cards_item">
