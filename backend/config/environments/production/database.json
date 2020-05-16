@@ -4,7 +4,8 @@
     "default": {
       "connector": "mongoose",
       "settings": {
-        "uri": "${process.env.DATABASE}"
+        "uri": "${process.env.DATABASE}",
+        "database": "${process.env.DATABASE_NAME}"
       },
       "options": { "ssl": true }
     }
