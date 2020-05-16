@@ -42,12 +42,11 @@
 
 This is my personal website, it will be used as a portfolio as well as my development blog. It's very basic at the moment and all od the content/images are all placeholders.
 
-<!--
 ### Built With
 
-- []()
-- []()
-- []() -->
+- [Strapi](https://strapi.io/)
+- [ReactJs](https://reactjs.org/)
+- [Express for serving the front-end](https://expressjs.com/)
 
 <!-- GETTING STARTED -->
 
@@ -65,7 +64,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Adam Spice - adam@adam-spice.online
 
 Project Link: [https://github.com/adam-spice/myWebsite](https://github.com/adam-spice/myWebsite)
 
