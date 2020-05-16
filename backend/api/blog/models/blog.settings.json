@@ -13,16 +13,11 @@
       "type": "string",
       "required": true
     },
-    "bigTitle": {
-      "type": "string",
-      "required": true
+    "body": {
+      "type": "richtext"
     },
-    "postBody": {
-      "type": "richtext",
-      "required": true
-    },
-    "images": {
-      "collection": "file",
+    "mainImage": {
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -31,6 +26,13 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "largeTitle": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
     }
   }
 }

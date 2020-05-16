@@ -17,12 +17,11 @@
       "type": "string",
       "required": true
     },
-    "projectDescription": {
-      "type": "richtext",
-      "required": true
+    "body": {
+      "type": "richtext"
     },
-    "images": {
-      "collection": "file",
+    "mainImage": {
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
