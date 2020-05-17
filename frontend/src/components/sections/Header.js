@@ -59,7 +59,7 @@ const Header = ({ open, setOpen }) => {
               className="nav__link"
               onClick={() => setOpen(false)}
             >
-              My Work
+              My Projects
             </a>
           </li>
         </ul>
