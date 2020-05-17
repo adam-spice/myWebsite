@@ -23,9 +23,9 @@ const MyWork = ({ myWorkRef }) => {
 
   return (
     <section ref={myWorkRef} className="my-work" id="work">
-      <h2 className="section__title section__title--work">My work</h2>
+      <h2 className="section__title section__title--work">My Projects</h2>
       <p className="section__subtitle section__subtitle--work">
-        A selection of my range of work
+        A selection of the range of projects that I have completed
       </p>
       {error && makeToast("error", error)}
       <ul className="cards">

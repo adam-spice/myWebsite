@@ -34,7 +34,7 @@ const Services = ({ myServicesRef }) => {
       </div>
 
       <a href="#work" className="btn">
-        My Work
+        My Projects
       </a>
     </section>
   );
