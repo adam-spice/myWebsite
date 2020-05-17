@@ -11,16 +11,18 @@ const AboutMe = ({ aboutRef }) => {
 
       <div className="about-me__body">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          I have always had an interest in software and web development but
+          didn’t think I would be in a place to do it as a career until now. I
+          have been studying for a Diploma in Software Development for the last
+          year and am looking forward to graduating. In my spare time, the web
+          development community is a big part of my life. I am always striving
+          to learn more and improve the way I code.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Besides programming I love spending time with friends and family and
+          can often be found together going out catching the latest movie,
+          staying in playing games on the sofa or planning a trip to someplace
+          I've never been before.
         </p>
       </div>
 
