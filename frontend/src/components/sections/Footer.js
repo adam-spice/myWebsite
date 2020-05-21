@@ -3,9 +3,6 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="footer">
-      <a href="mailto:adam@adam-spice.online" className="footer__link">
-        adam@adam-spice.online
-      </a>
       <ul className="social-list">
         <li className="social-list__item">
           <a className="social-list__link" href="https://codepen.io">

@@ -28,6 +28,15 @@ const Header = ({ open, setOpen }) => {
           </li>
           <li className="nav__item">
             <Link
+              to="/#contact"
+              className="nav__link"
+              onClick={() => setOpen(false)}
+            >
+              Contact Me
+            </Link>
+          </li>
+          <li className="nav__item">
+            <Link
               to="/blog"
               className="nav__link"
               onClick={() => setOpen(false)}

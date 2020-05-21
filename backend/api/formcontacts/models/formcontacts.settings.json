@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "formcontacts",
+  "info": {
+    "name": "Form Contacts"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "message": {
+      "type": "text",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}

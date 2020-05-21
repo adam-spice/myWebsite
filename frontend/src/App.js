@@ -5,9 +5,8 @@ import Header from "./components/sections/Header";
 import Footer from "./components/sections/Footer";
 import HomePage from "./pages/HomePage";
 import Article from "./pages/Article";
-
-import "./assets/css/style.css";
 import BlogList from "./pages/BlogList";
+import "./assets/css/style.css";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -27,7 +26,6 @@ function App() {
         </Route>
         <Redirect to="/" />
       </Switch>
-
       <Footer />
     </div>
   );
